@@ -1,0 +1,36 @@
+<main>
+  <div class="loginContainer">
+    <h3>REGISTRARSE</h3>
+    <form action="/api/sessions/register" method="post">
+      <div class="formContainer">
+        <p>Completar todos los datos para registrarse</p>
+        <hr>
+        <label for="first_name"><b>Nombre</b></label>
+        <input type="text" name="first_name" value="Nombre de Prueba" required>
+
+        <label for="last_name"><b>Apellido</b></label>
+        <input type="text" name="last_name" value="Apellido de Prueba">
+
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email"  value="email@prueba.com" required>
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password"  value="123456" name="password" id="password" required>
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" value="123456" name="psw-repeat" id="pswRepeat" required>
+
+        <p>By creating an account you agree to our <p>Terms & Privacy</p>.</p>
+
+        <div class="clearfix">
+          <button type="submit" id="sigInSubmit">Registrarse</button>
+        </div>
+      </div>
+    </form>
+    <p class="" id="answer">{{answer}}</p>
+    <br>
+    <a class="link" href="/">Log in</a>
+  </div>
+</main>
+
+<script src="/js/register.js"></script>

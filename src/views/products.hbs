@@ -1,0 +1,49 @@
+<main>
+  <div class="swiper-container">
+    <h3>PRODUCTOS</h3>
+    {{#if productError}}
+      <p class="pageAlert"><strong>Se ha producido un error al momento de cargar los productos</strong></p>
+    {{else}}
+      <div class="swiper-filter">
+        <h4>FILTROS:</h4>
+        <div class="groupFilter">
+          <p class="titleFilter">CATEGEGORIAS</p>
+          <div>
+            <a href="/?category=all">Todas</a>
+            {{#each category}}<a href="/?category={{this}}">{{this}}</a>{{/each}}
+          </div>
+        </div>
+        <div class="groupFilter">
+          <p class="titleFilter">ORDEN:</p>
+          <div>
+            <a href={{disorderly}}>Sin orden</a>
+            <a href={{ascend}}>Ascendente</a>
+            <a href={{descend}}>Descendete</a>
+          </div>
+        </div>
+        <div class="groupFilter">
+          <p class="titleFilter">STOCK:</p>
+          <div>
+            <a href={{availability}}>Todos</a>
+            <a href={{unavailability}}>Con Stock</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-wrapper">
+      {{#each product}}
+        <div class="swiper-slide">
+          <a href="{{this.link}}"><img src={{this.thumbnail}}></a>
+          <p class="sw-title">{{this.title}}</p>
+          <p class="sw-price">$ {{this.price}}</p>
+          {{#if this.unavailability}}<p>SIN STOCK</p>{{/if}}
+        </div>
+      {{/each}}
+      </div>
+      <div class="swiper-pagination">
+        {{#if hasPrevPage}} <a id="prevPage" href="{{prevLink}}"><i class='bx bx-chevrons-left'></i></a>{{/if}}
+        <p id="pages"><span id="thisPage">{{page}}</span> de <span id="totalPages">{{totalPages}}</span></p>
+        {{#if hasNextPage}}<a id="nextPage" href="{{nextLink}}"><i class='bx bx-chevrons-right'></i></a>{{/if}}
+      </div>
+    {{/if}} <!-- end productError -->
+  </div>
+</main>

@@ -1,0 +1,260 @@
+@import './variables';
+@import './headeryfooter';
+
+body {
+  background-color: gray;
+  
+  .loginContainer {
+    @extend .swiper-container;
+
+    .formContainer{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1em;
+
+      label {
+        font-weight: bold;
+      }
+      button{
+        width: 100px;
+        margin-top: 1em;
+      }
+    }
+    .link {
+      margin: 0 auto;
+      margin-bottom: 1em;
+      color: #011720;
+      font-weight: bold;
+    }
+  }
+
+  .userContainer {
+    @extend .swiper-container;
+
+    .listUser{
+      width: 100%;
+      list-style: none;
+
+      li{
+        margin: 0.5rem;
+      }
+    }
+  }
+
+  .alertContainer {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .pageAlert{
+      margin: 2rem;
+      font-size: 2.5rem;
+      color: red;
+      text-align: center;
+    }
+  }
+
+  .swiper-container {
+    margin: 2rem 0;
+    background-color: #009bdd59;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .swiper-filter{
+      display: flex;
+
+      h4 {
+        font-weight: bolder;
+        margin: 0.5rem;
+      }
+
+      .groupFilter{
+        display: flex;
+        margin: 0.5rem;
+
+        .titleFilter{
+          font-weight: bold;
+          color: #013449;
+        }
+        div{
+          display: flex;
+
+          a, button{
+            margin: 0 0.25rem;
+          }
+        }
+      }
+    }
+
+    .swiper-wrapper{
+      display: flex;
+      width: 100%;
+      flex-wrap: nowrap;
+      .swiper-slide{
+        width: 20%;
+        margin: 0.3rem;
+        padding: 0.4rem;
+        background-color: rgba(211, 211, 211, 0.6);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+          width: 90%;
+        }
+        .sw-title{
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        .sw-price{
+          font-size: 0.8rem;
+        }
+        .sw-code{
+          font-size: 0.8rem;
+          font-style: italic;
+          color: $color01;
+        }
+      }
+    }
+    .swiper-pagination{
+      display: flex;
+      margin: 0.5rem auto;
+
+      a, p {
+        margin: 5px;
+      }
+    }
+  }
+
+  .productsContainer {
+    margin: 2rem;
+    background-color: #009bdd59;
+    width: 100%;
+    text-align: center;
+
+    .product{
+      @extend .swiper-container;
+
+      img {
+        max-width: 50vh;
+      }
+    }
+  }
+
+  .cartContainer {
+    @extend .swiper-container;
+
+    .product{
+      display: flex;
+      width: 90%;
+      justify-content: space-between;
+
+      img {
+        max-width: 10vh;
+      }
+    }
+  }
+  .formRTP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: lightgray;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+
+    .alert {
+      margin: 0.5rem;
+    }
+
+    .formcol{
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      align-items: center;
+
+      label, input {
+        display: block;
+      }
+      .frButton {
+        height: 2rem;
+        width: 8rem;
+      }
+    }
+  }
+
+  .chat{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title{
+      text-align: center;
+      padding-bottom: 1.5rem;
+    }
+
+    .element{
+      width: 100%;
+      display: flex;
+      .supGroupInput{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .groupInput{
+          margin: 1em;
+  
+          .input{
+            width: 300px;
+          }
+          .bx-check{
+            color: green;
+          }
+          .visibleOff{
+            display: none;
+          }
+        }
+      }
+
+
+      #messageLogs {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        margin: 1em;
+        background-color: $color02;
+
+        .log{
+          display: flex;
+          justify-content: space-between;
+
+          .user{
+            color: $color01;
+            font-weight: bold;
+          }
+          .text{
+            padding-left: 0.5rem;
+            width: 100%;
+            justify-self: start;
+          }
+          .date{
+            font-style: italic;
+            color: lightgrey;
+            font-size: 0.6rem;
+          }
+        }
+      }
+    }
+  }
+}

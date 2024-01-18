@@ -1,0 +1,27 @@
+<main>
+  <section class="chat">
+    <h3 class="title">Chat</h3>
+    <div class="element">
+      <div class="supGroupInput">
+        <div class="groupInput">
+          <label for="chatBox">Escribe tu mensaje:</label>
+          <input id="chatBox" type="text" name="chatBox" class="input">
+        </div>
+        <div class="groupInput">
+          <label for="chatUser">Ingresa tu e-mail</label>
+          <input id="chatUser" type="email" name="chatUser" class="input">
+          <i id='checkUser' class='bx bx-check visibleOff'></i>
+        </div>
+        <button id="clearMessages">Borrar todos los mensajes</button>
+      </div>
+      <div id="messageLogs">
+        <p>.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://unpkg.com/validator@latest/validator.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/chat.js"></script>

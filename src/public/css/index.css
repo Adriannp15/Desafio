@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+}
+
+p, label, input, a {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:active {
+  color: black;
+}
+
+header {
+  height: 6rem;
+  width: 100%;
+  display: block;
+  background-color: black;
+}
+header .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .title img {
+  height: 3rem;
+}
+header .title div {
+  display: flex;
+}
+header .title div .userName {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  margin-right: 1rem;
+}
+header .title div .userRole {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  color: #ff9900;
+  margin-right: 1rem;
+}
+header .title div a {
+  color: #969696;
+  margin-right: 1.5rem;
+}
+header .nav {
+  background-color: #009bdd;
+  display: flex;
+  justify-content: space-between;
+}
+header .nav .navDiv {
+  height: 3rem;
+}
+header .nav .navDiv ul {
+  width: 100%;
+  height: 3rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+header .nav .navDiv ul li {
+  font-weight: 600;
+  margin: 0.5rem 1rem;
+}
+
+footer {
+  background-color: black;
+  color: #009bdd;
+}
+footer #copyright {
+  text-align: center;
+  margin: 0 0 5px 0;
+}
+
+body {
+  background-color: gray;
+}
+body .loginContainer .formContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+body .loginContainer .formContainer label {
+  font-weight: bold;
+}
+body .loginContainer .formContainer button {
+  width: 100px;
+  margin-top: 1em;
+}
+body .loginContainer .link {
+  margin: 0 auto;
+  margin-bottom: 1em;
+  color: #011720;
+  font-weight: bold;
+}
+body .userContainer .listUser {
+  width: 100%;
+  list-style: none;
+}
+body .userContainer .listUser li {
+  margin: 0.5rem;
+}
+body .alertContainer {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .alertContainer .pageAlert {
+  margin: 2rem;
+  font-size: 2.5rem;
+  color: red;
+  text-align: center;
+}
+body .swiper-container, body .cartContainer, body .productsContainer .product, body .loginContainer, body .userContainer {
+  margin: 2rem 0;
+  background-color: rgba(0, 155, 221, 0.3490196078);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .swiper-container .swiper-filter, body .cartContainer .swiper-filter, body .productsContainer .product .swiper-filter, body .loginContainer .swiper-filter, body .userContainer .swiper-filter {
+  display: flex;
+}
+body .swiper-container .swiper-filter h4, body .cartContainer .swiper-filter h4, body .productsContainer .product .swiper-filter h4, body .loginContainer .swiper-filter h4, body .userContainer .swiper-filter h4 {
+  font-weight: bolder;
+  margin: 0.5rem;
+}
+body .swiper-container .swiper-filter .groupFilter, body .cartContainer .swiper-filter .groupFilter, body .productsContainer .product .swiper-filter .groupFilter, body .loginContainer .swiper-filter .groupFilter, body .userContainer .swiper-filter .groupFilter {
+  display: flex;
+  margin: 0.5rem;
+}
+body .swiper-container .swiper-filter .groupFilter .titleFilter, body .cartContainer .swiper-filter .groupFilter .titleFilter, body .productsContainer .product .swiper-filter .groupFilter .titleFilter, body .loginContainer .swiper-filter .groupFilter .titleFilter, body .userContainer .swiper-filter .groupFilter .titleFilter {
+  font-weight: bold;
+  color: #013449;
+}
+body .swiper-container .swiper-filter .groupFilter div, body .cartContainer .swiper-filter .groupFilter div, body .productsContainer .product .swiper-filter .groupFilter div, body .loginContainer .swiper-filter .groupFilter div, body .userContainer .swiper-filter .groupFilter div {
+  display: flex;
+}
+body .swiper-container .swiper-filter .groupFilter div a, body .cartContainer .swiper-filter .groupFilter div a, body .productsContainer .product .swiper-filter .groupFilter div a, body .loginContainer .swiper-filter .groupFilter div a, body .userContainer .swiper-filter .groupFilter div a, body .swiper-container .swiper-filter .groupFilter div button, body .cartContainer .swiper-filter .groupFilter div button, body .productsContainer .product .swiper-filter .groupFilter div button, body .loginContainer .swiper-filter .groupFilter div button, body .userContainer .swiper-filter .groupFilter div button {
+  margin: 0 0.25rem;
+}
+body .swiper-container .swiper-wrapper, body .cartContainer .swiper-wrapper, body .productsContainer .product .swiper-wrapper, body .loginContainer .swiper-wrapper, body .userContainer .swiper-wrapper {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+body .swiper-container .swiper-wrapper .swiper-slide, body .cartContainer .swiper-wrapper .swiper-slide, body .productsContainer .product .swiper-wrapper .swiper-slide, body .loginContainer .swiper-wrapper .swiper-slide, body .userContainer .swiper-wrapper .swiper-slide {
+  width: 20%;
+  margin: 0.3rem;
+  padding: 0.4rem;
+  background-color: rgba(211, 211, 211, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .swiper-container .swiper-wrapper .swiper-slide img, body .cartContainer .swiper-wrapper .swiper-slide img, body .productsContainer .product .swiper-wrapper .swiper-slide img, body .loginContainer .swiper-wrapper .swiper-slide img, body .userContainer .swiper-wrapper .swiper-slide img {
+  width: 90%;
+}
+body .swiper-container .swiper-wrapper .swiper-slide .sw-title, body .cartContainer .swiper-wrapper .swiper-slide .sw-title, body .productsContainer .product .swiper-wrapper .swiper-slide .sw-title, body .loginContainer .swiper-wrapper .swiper-slide .sw-title, body .userContainer .swiper-wrapper .swiper-slide .sw-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+body .swiper-container .swiper-wrapper .swiper-slide .sw-price, body .cartContainer .swiper-wrapper .swiper-slide .sw-price, body .productsContainer .product .swiper-wrapper .swiper-slide .sw-price, body .loginContainer .swiper-wrapper .swiper-slide .sw-price, body .userContainer .swiper-wrapper .swiper-slide .sw-price {
+  font-size: 0.8rem;
+}
+body .swiper-container .swiper-wrapper .swiper-slide .sw-code, body .cartContainer .swiper-wrapper .swiper-slide .sw-code, body .productsContainer .product .swiper-wrapper .swiper-slide .sw-code, body .loginContainer .swiper-wrapper .swiper-slide .sw-code, body .userContainer .swiper-wrapper .swiper-slide .sw-code {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #009bdd;
+}
+body .swiper-container .swiper-pagination, body .cartContainer .swiper-pagination, body .productsContainer .product .swiper-pagination, body .loginContainer .swiper-pagination, body .userContainer .swiper-pagination {
+  display: flex;
+  margin: 0.5rem auto;
+}
+body .swiper-container .swiper-pagination a, body .cartContainer .swiper-pagination a, body .productsContainer .product .swiper-pagination a, body .loginContainer .swiper-pagination a, body .userContainer .swiper-pagination a, body .swiper-container .swiper-pagination p, body .cartContainer .swiper-pagination p, body .productsContainer .product .swiper-pagination p, body .loginContainer .swiper-pagination p, body .userContainer .swiper-pagination p {
+  margin: 5px;
+}
+body .productsContainer {
+  margin: 2rem;
+  background-color: rgba(0, 155, 221, 0.3490196078);
+  width: 100%;
+  text-align: center;
+}
+body .productsContainer .product img {
+  max-width: 50vh;
+}
+body .cartContainer .product {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+body .cartContainer .product img {
+  max-width: 10vh;
+}
+body .formRTP {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: lightgray;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+body .formRTP .alert {
+  margin: 0.5rem;
+}
+body .formRTP .formcol {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+body .formRTP .formcol label, body .formRTP .formcol input {
+  display: block;
+}
+body .formRTP .formcol .frButton {
+  height: 2rem;
+  width: 8rem;
+}
+body .chat {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .chat .title {
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+body .chat .element {
+  width: 100%;
+  display: flex;
+}
+body .chat .element .supGroupInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .chat .element .supGroupInput .groupInput {
+  margin: 1em;
+}
+body .chat .element .supGroupInput .groupInput .input {
+  width: 300px;
+}
+body .chat .element .supGroupInput .groupInput .bx-check {
+  color: green;
+}
+body .chat .element .supGroupInput .groupInput .visibleOff {
+  display: none;
+}
+body .chat .element #messageLogs {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  margin: 1em;
+  background-color: #586a72;
+}
+body .chat .element #messageLogs .log {
+  display: flex;
+  justify-content: space-between;
+}
+body .chat .element #messageLogs .log .user {
+  color: #009bdd;
+  font-weight: bold;
+}
+body .chat .element #messageLogs .log .text {
+  padding-left: 0.5rem;
+  width: 100%;
+  justify-self: start;
+}
+body .chat .element #messageLogs .log .date {
+  font-style: italic;
+  color: lightgrey;
+  font-size: 0.6rem;
+}/*# sourceMappingURL=index.css.map */

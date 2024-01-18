@@ -1,0 +1,33 @@
+<main>
+  <section class="productsContainer">
+    {{#if productError}}
+      <p>Se ha producido un error al momento de buscar el producto</p>
+    {{else}}
+    <h3>{{product.title}}</h3>
+    <p>SKU: {{product.code}}</p>
+    
+    <div class="product">
+      <img src="{{product.thumbnail}}" alt="{{product.title}}">
+      <p>CATEGORIA: {{product.category}}</p>
+      <p>PRECIO: {{product.price}}</p>
+      <p>STOCK: {{product.stock}}</p>
+      <p>{{product.description}}</p>
+    </div>
+    {{#if userName}}<button onclick="addProduct('{{cart}}', '{{product._id}}')">Añadir producto al carrito</button>{{/if}}
+    <p id="addResponce"></p>
+    {{/if}}
+  </section>
+</main>
+
+<script>
+  async function addProduct(cid, pid) {
+    const text = document.querySelector('#addResponce');
+    let resp = await fetch(`/api/carts/${cid}/product/${pid}`, {method: 'POST'})
+    resp = await resp.json();
+    if( await resp.status == "ok") {
+      text.innerHTML = "Producto agregado correctamente"
+    } else {
+      text.innerHTML = "A ocurrido un error al agregar el producto"
+    }
+  }
+</script>

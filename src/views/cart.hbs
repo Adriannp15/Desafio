@@ -1,0 +1,25 @@
+<main>
+  <section class="cartContainer">
+    <h3>CARRITO</h3>
+    {{#if cartError}}
+      <p>Se ha producido un error al momento de buscar el carrito</p>
+    {{else}}
+      <hr>
+      <p>Su carrito es: {{cartId}}</p>
+      <hr>
+      {{#if cartNoEmpty}}
+        {{#each products}}
+          <div class="product">
+            <img src="{{this.product.thumbnail}}" alt="{{this.product.title}}" />
+            <p>{{this.product.title}}</p>
+            <p>Unidades: {{this.quantity}}</p>
+            <p>{{this.product.price}}</p>
+            <p>Total: {{this.total}}</p>
+          </div>
+        {{/each}}
+      {{else}}
+        <p>Su carrito esta vacio</p>
+      {{/if}}
+    {{/if}}
+  </section>
+</main>

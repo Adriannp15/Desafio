@@ -1,0 +1,79 @@
+[
+  {
+    "id": 0,
+    "title": "Bicicleta Merida Ciclismo Ruta Scultura 300 Rim",
+    "description": "Cuadro Frame Scultura Lite - Aluminio  ... ",
+    "code": "MEBC21RR030052G",
+    "status": true,
+    "price": 1989600,
+    "stock": 20,
+    "category": "ruta",
+    "thumbnail": "https://newsport.vtexassets.com/arquivos/ids/14890321-800-auto?v=638053267306400000&width=800&height=auto&aspect=true"
+  },
+  {
+    "id": 1,
+    "title": "Bicicleta Cube Ruta Attain Pro 28",
+    "description": "Cuadro Aluminium 6061 T6 Superlite ...",
+    "code": "CUB22RTATPR850G",
+    "status": true,
+    "price": 2096799,
+    "stock": 15,
+    "category": "ruta",
+    "thumbnail": "https://newsport.vtexassets.com/arquivos/ids/16221341-800-auto?v=638219245482200000&width=800&height=auto&aspect=true"
+  },
+  {
+    "id": 2,
+    "title": "Bicicleta Cube Ruta Nuroad Pro 28 2022",
+    "description": "Cuadro Aluminium 6061 T6 Superlite, Gravel Comfort Geometry, AXH.",
+    "code": "CUB22RGNUPR850G",
+    "status": true,
+    "price": 2524099,
+    "stock": 10,
+    "category": "ruta",
+    "thumbnail": "https://newsport.vtexassets.com/arquivos/ids/17309434-800-auto?v=638340179220570000&width=800&height=auto&aspect=true"
+  },
+  {
+    "id": 3,
+    "title": "Bicicleta Volta Mtb Avian R29 20vel",
+    "description": "Cuadro aluminio hidroformado, frente conico, cableado interno, soldaduras pulidas",
+    "code": "1006392",
+    "status": true,
+    "price": 98499,
+    "stock": 30,
+    "category": "mtb",
+    "thumbnail": "https://newsport.vtexassets.com/arquivos/ids/17448503-800-auto?v=638346097325000000&width=800&height=auto&aspect=true"
+  },
+  {
+    "id": 4,
+    "title": "Bicicleta Cube Mtb Elite Carbono C62 One R29",
+    "description": "Cuadro carbono monocasco frente conico C:62 Advanced Twin Mold Technology, ARG2, ruteo cable interno, Dropper Post ready.",
+    "code": "CUB22MHELIO918P",
+    "status": true,
+    "price": 6619300,
+    "stock": 5,
+    "category": "mtb",
+    "thumbnail": "https://newsport.vtexassets.com/arquivos/ids/15822363-800-auto?v=638155230117300000&width=800&height=auto&aspect=true"
+  },
+  {
+    "id": 5,
+    "title": "Bicicleta Volta Mtb X-zion Carbono Deore R29 12vel ",
+    "description": "Cuadro: MTB CARBONO MONOCASCO 29? BOOST 148",
+    "code": "1007704",
+    "status": true,
+    "price": 2115599,
+    "stock": 15,
+    "category": "mtb",
+    "thumbnail": "https://newsport.vtexassets.com/arquivos/ids/16229120-800-auto?v=638221704674100000&width=800&height=auto&aspect=true"
+  },
+  {
+    "id": 7,
+    "title": "Bicicleta Volta Ruta Brest Horq. Carbono Sora 18v 700c",
+    "description": "Cuadro aluminio ruta volta brest azul horquilla carbono r700 volta",
+    "code": "1006836",
+    "price": 1198299,
+    "status": false,
+    "stock": 15,
+    "category": "Ruta",
+    "thumbnail": "https://newsport.vtexassets.com/arquivos/ids/17565001-800-auto?v=638357578934970000&width=800&height=auto&aspect=true"
+  }
+]

@@ -1,0 +1,55 @@
+<main>
+  <div class="swiper-container">
+    <h3>PRODUCTOS EN TIEMPO REAL</h3>
+    <p>Puede mover los productos para desplazarte a traves de ellos</p>
+    <div class="swiper-wrapper" id="swiper">
+      {{#each product}}
+      <div class="swiper-slide">
+        <img src={{this.thumbnail}}>
+        <p class="sw-title">{{this.title}}</p>
+        <p class="sw-price">Precio: $ {{this.price}}</p>
+        <p class="sw-code">Código: {{this.code}}</p>
+        <button onclick="deletePrd('{{this.code}}')">Eliminar</button>
+      </div>
+      {{/each}}
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+  <form id="formRTP" class="formRTP">
+    <div class="formcol">
+      <div>
+        <label for="frimage">Direción Imagen</label>
+        <input type="text" name="frimage" id="frimage" value="https://newsport.vtexassets.com/arquivos/ids/17567638-800-auto?v=638358216130330000&width=800&height=auto&aspect=true">
+      </div>
+      <div>
+        <label for="frtitle">Producto</label>
+        <input type="text" name="frtitle" id="frtitle" value='EJEMPLO BICICLETA'>
+      </div>
+      <div>
+        <label for="frcat">Categoria</label>
+        <input type="text" name="frcat" id="frcat" value="Ruta">
+      </div>
+      <div>
+        <label for="frprice">Precio</label>
+        <input type="number" name="frprice" id="frprice" value="1198299">
+      </div>
+      <div>
+        <label for="frstock">Stock</label>
+        <input type="number" name="frstock" id="frstock" value="15">
+      </div>
+      <div>
+        <label for="frcode">Código del Producto</label>
+        <input type="text" name="frcode" id="frcode" value="PRUEBA01">
+      </div>
+      <input class="frButton" type="submit" value="Cargar Producto" id="frButton">
+    </div>
+    <p id="errorAlerts" class="alert"></p>
+  </form>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="./js/realTimeProducts.js"></script>
